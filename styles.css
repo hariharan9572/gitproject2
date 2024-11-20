@@ -3,9 +3,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 /* Container */
@@ -15,7 +16,7 @@ body {
     padding: 30px;
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Header */
@@ -25,10 +26,11 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     color: #1d1d1f;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .subtitle {
@@ -40,12 +42,16 @@ header .subtitle {
 /* Sections */
 .content-section {
     margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9fb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-section h2 {
     font-size: 1.8rem;
     color: #1d1d1f;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-bottom: 2px solid #ececec;
     padding-bottom: 5px;
 }
@@ -71,10 +77,22 @@ header .subtitle {
 a {
     color: #007aff;
     text-decoration: none;
+    position: relative;
 }
 
-a:hover {
-    text-decoration: underline;
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #007aff;
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 /* Footer */
@@ -82,5 +100,33 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #6e6e73;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #ececec;
+}
+/* Button Styles */
+button {
+    background-color: #007aff; /* Apple's signature blue color */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5; /* Darker blue for hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    background-color: #003f7f; /* Even darker blue for active state */
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
