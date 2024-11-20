@@ -105,3 +105,28 @@ footer {
     background-color: #ffffff;
     border-top: 1px solid #ececec;
 }
+/* Button Styles */
+button {
+    background-color: #007aff; /* Apple's signature blue color */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5; /* Darker blue for hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    background-color: #003f7f; /* Even darker blue for active state */
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
