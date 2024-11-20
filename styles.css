@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #6e6e73;
+    margin-top: 10px;
+}
+
+/* Sections */
+.content-section {
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ececec;
+    padding-bottom: 5px;
+}
+
+.content-section p, .content-section ul, .content-section ol {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+.content-section ul, .content-section ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.content-section ul li, .content-section ol li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6e6e73;
+    margin-top: 20px;
+}
